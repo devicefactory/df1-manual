@@ -114,14 +114,12 @@ Son utilisation est soumise à Les deux conditions suivantes:
 1. Cet appareil ne peut pas provoquer d’interférences et
 2. Cet appareil doit accepter Toute interférence, y compris les interférences qui peuvent causer un mauvais fonctionnement du dispositive
 
+ CAN ICES - 3 (B)/NMB – 3(B)
 
-CAN ICES - 3 (B)/NMB – 3(B)
+ IC: 11777A-DF1 
+ FCC ID: 2ABTJ-DF1
+ Model: DF1
 
-IC: 11777A-DF1 
-FCC ID: 2ABTJ-DF1
-
-Device Ideas
-Model: DF1
 
 
 
