@@ -17,7 +17,7 @@ Warning: This device is intended for adult use only, keep out of reach of childr
 * DF1 device
 * CR2032 Battery
 
-* Operation:
+**Operation:**
 
 Install Battery:
 *	Place device face down on a flat surface, FCC ID should be visible
@@ -117,7 +117,7 @@ Son utilisation est soumise à Les deux conditions suivantes:
 
 CAN ICES - 3 (B)/NMB – 3(B)
 
-IC: 11777A-DF1
+IC: 11777A-DF1 
 FCC ID: 2ABTJ-DF1
 
 Device Ideas
