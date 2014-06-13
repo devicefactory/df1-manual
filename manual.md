@@ -5,7 +5,7 @@ DF1 Manual
 
 DF1 is a remote sensor device measuring 3-axis accelerations and communicating data via a wireless connection to a base station.
 
-![DF1](http://github.com/devicefactory/share/media/df1/df1.png)
+![DF1](http://github.com/devicefactory/share/tree/master/media/df1/df1.png)
 
 It is intended as a development platform for a technical user, or someone who wants to learn more about this technology.  The user can read, record, and process data produced by the device via a wireless connection.  This connection can be made though any computer which supports the Bluetooth 4.0 protocol.
 
