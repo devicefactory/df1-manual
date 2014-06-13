@@ -1,7 +1,7 @@
 DF1 Manual
 ==========
 
-**Description:**
+## Description:
 
 DF1 is a remote sensor device measuring 3-axis accelerations and communicating data via a wireless connection to a base station.
 
