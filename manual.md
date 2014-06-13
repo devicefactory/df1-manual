@@ -1,14 +1,18 @@
 DF1 Manual
 ==========
 
-## Description:
+**Description:**
 
 DF1 is a remote sensor device measuring 3-axis accelerations and communicating data via a wireless connection to a base station.
 
 It is intended as a development platform for a technical user, or someone who wants to learn more about this technology.  The user can read, record, and process data produced by the device via a wireless connection.  This connection can be made though any computer which supports the Bluetooth 4.0 protocol.
 
-Demo applications are available and can be installed on a iOS device supporting Bluetooth 4.0.
-For more information please go to:  http://devicefactory.com
+Demo applications are available and can be installed on a iOS device supporting Bluetooth 4.0.  In addition, 3D designs for accessories to DF1 are available to download and print.
+
+For more information please go to:
+
+* http://github.com/devicefactory/df1-ios
+* http://github.com/devicefactory/df1-3d
 
 Warning: This device is intended for adult use only, keep out of reach of children and pets.
 
