@@ -3,6 +3,8 @@ DF1 BLE Services
 
 The following document describes supported GATT services in DF1 device.
 
+![DF1](https://raw.githubusercontent.com/devicefactory/share/master/media/df1/df1.png)
+
 Concepts / Glossary
 ===================
 
