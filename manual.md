@@ -55,13 +55,13 @@ For more information please go to the following sites:
 *	http://developer.android.com
 
 **Specifications:**
-| --- | --- |
-|Range: | 160 feet (50 meters), line of sight|
-|Battery: | CR2032 3.0 volts|
-|Battery Life: | Up to 1 year, application dependent|
-|Communication Protocol: | Bluetooth Low Energy (Bluetooth Smart)|
-|Operating Frequency: | 2.400 GHz - 2.4835 GHz ISM band|
-|Operating Temperature: | 5F (-15C) to 150F (65C)|
+|:------------------------|:---------------------------------------|
+| Range:                  | 160 feet (50 meters), line of sight    |
+| Battery:                | CR2032 3.0 volts                       |
+| Battery Life:           | Up to 1 year, application dependent    |
+| Communication Protocol: | Bluetooth Low Energy (Bluetooth Smart) |
+| Operating Frequency:    | 2.400 GHz - 2.4835 GHz ISM band        |
+| Operating Temperature:  | 5F (-15C) to 150F (65C)                |
 
 **Safety:**
 
