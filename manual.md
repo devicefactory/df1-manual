@@ -55,7 +55,8 @@ For more information please go to the following sites:
 *	http://developer.android.com
 
 **Specifications:**
-|:------------------------|:---------------------------------------|
+
+| ----------------------- |:--------------------------------------:|
 | Range:                  | 160 feet (50 meters), line of sight    |
 | Battery:                | CR2032 3.0 volts                       |
 | Battery Life:           | Up to 1 year, application dependent    |
