@@ -55,7 +55,7 @@ For more information please go to the following sites:
 *	http://developer.android.com
 
 **Specifications:**
-
+--- | ---
 Range: | 160 feet (50 meters), line of sight
 Battery: | CR2032 3.0 volts
 Battery Life: | Up to 1 year, application dependent
@@ -121,16 +121,10 @@ Son utilisation est soumise à Les deux conditions suivantes:
 2. Cet appareil doit accepter Toute interférence, y compris les interférences qui peuvent causer un mauvais fonctionnement du dispositive
 
 
-*CAN ICES - 3 (B)/NMB – 3(B)*
-
-
-*IC: 11777A-DF1*
-
-
-*FCC ID: 2ABTJ-DF1*
-
-
-*Model: DF1*
+ **CAN ICES - 3 (B)/NMB – 3(B)**
+ **IC: 11777A-DF1**
+ **FCC ID: 2ABTJ-DF1**
+ **Model: DF1**
 
 
 
