@@ -42,8 +42,8 @@ communicate with DF1.
 
 * [Updating the Firmware](howto_fwupdate.md)
 
-  The firmware can be upgraded over the air. Currently, the demo app for Df1 does not contain this
-  feature. However, since DF1 uses Texas Instruments CC2541, it can be flashed using TI's iOS app.
+  The firmware can be upgraded over the air. Learn how to turn DF1 into iBeacons. 
+  Other firmware profiles will be released which will enhance the functionality of DF1.
 
 ## Other Docs
 
