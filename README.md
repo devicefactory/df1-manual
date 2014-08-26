@@ -13,7 +13,7 @@ Each markdown file describes how to communicate with DF1 using various platforms
 DF1 marks our first foray into connected device.
 We created DF1 so that we can learn, have fun, and invite others to join us in hacking with it.
 
-Below you'll find topics that are broadly separated by the different platfroms from which you can
+Below you'll find topics that are broadly separated by the different platforms from which you can
 communicate with DF1.
 
 ## Tutorials
