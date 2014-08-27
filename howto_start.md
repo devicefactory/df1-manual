@@ -56,7 +56,9 @@ hierarchy:
 
 When you "scan" for the devices, our DF1 should show up.
 [LightBlue](https://itunes.apple.com/us/app/lightblue-bluetooth-low-energy/id557428110?mt=8) will also allow you to
-browse the contents of DF1. It will discover list of services and their associated characteristics.
+browse the contents of DF1. It will discover list of services and their associated characteristics like so:
+
+<img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_df1_top.png alt="DF Services on LightBlue App" width=200>
 
 You'll notice that these services exist in DF1:
 
@@ -69,7 +71,6 @@ You'll notice that these services exist in DF1:
 | Test Service (UUID: AA60)         | Allows toggle of LED's
 | OAD Service (custom)              | Only used for over-air-update.
  
-<img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_df1_top.png alt="DF Services on LightBlue App" width=200>
 
 ## Light Me Up!
 
