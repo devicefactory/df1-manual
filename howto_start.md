@@ -125,7 +125,7 @@ Now let's try something a LOT more interesting. We are going to try to stream x,
 
   `0xFF013F   ->   x: 0xFF    y: 0x01    z: 0x3F`
 
-  These are hex values representing 3 bytes, 1 byte per axis. Thus, you are seeing unsigned 8 bit integer per axis.
+  These are hex values representing 3 bytes, 1 byte per axis. Thus, you are seeing unsigned 1 byte integer per axis.
   This simple python lines show what these 3 bytes contain. More on this in later tutorial...
 
   ```{python}
