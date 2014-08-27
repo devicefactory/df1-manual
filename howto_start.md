@@ -79,3 +79,5 @@ For this, you will need to:
 2. Under that service, find Characteristic `0xAA62`
 3. Write hex value `01` into that characteristic
 
+
+
