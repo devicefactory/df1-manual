@@ -85,7 +85,10 @@ The screenshot should look like the following. Scroll to the section where it sa
 
 <img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_testuuid.png width=250>
 
-> Enter `01` as the hexvalue. You'll see the red LED light up!
-> Enter `02` next. You'll see the green LED.
-> Enter `04` afterwards. Finally, the blue LED will light up.
-> Lastly, enter `00` to turn off the LED.
+Enter `01` as the hexvalue. You'll see the red LED light up!
+
+Enter `02` next. You'll see the green LED.
+
+Enter `04` afterwards. Finally, the blue LED will light up.
+
+Lastly, enter `00` to turn off the LED.
