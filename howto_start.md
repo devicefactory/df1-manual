@@ -37,7 +37,8 @@ There are various BLE apps on the appstore that can easily discover any BLE capa
 * [TI BLE Multitool](https://itunes.apple.com/us/app/ti-ble-multitool/id580494818?mt=8)
 * [LightBlue](https://itunes.apple.com/us/app/lightblue-bluetooth-low-energy/id557428110?mt=8)
 
-For this tutorial, let's try using LightBlue app.
+For this tutorial, let's try using 
+[LightBlue](https://itunes.apple.com/us/app/lightblue-bluetooth-low-energy/id557428110?mt=8) app.
 
 Most of the BLE browser apps will first discover the device and allow you to select it.
 Once the device is selected, the capabilities of the device is presented in the following object
