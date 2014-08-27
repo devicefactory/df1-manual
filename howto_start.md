@@ -13,7 +13,9 @@ Here's a highlevel overview of the features:
 * Idle battery life >1 year. Active use battery life 2-3 months.
 * Antenna range : 150 - 250ft line of sight (subject to effects from surroundings)
 * Upgradeable firmware over the air
-
+* RGB LED
+* FCC Certified
+* High-quality injection molded plastic enclosure
 
 
 ## Discovering What's Inside
