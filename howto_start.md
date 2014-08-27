@@ -3,7 +3,7 @@
 You've just gotten DF1 in your hands and wondering what you can do with it?
 There are tons of things you can do.
 
-<img src=https://raw.githubusercontent.com/devicefactory/share/master/media/df1/df1-rear-battery-door.png alt="rear battery open" width=600>
+<center><img src=https://raw.githubusercontent.com/devicefactory/share/master/media/df1/df1-rear-battery-door.png alt="rear battery open" width=600></center>
 
 Here's a highlevel overview of the features:
 
