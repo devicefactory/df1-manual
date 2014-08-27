@@ -3,7 +3,7 @@
 You've just gotten DF1 in your hands and wondering what you can do with it?
 There are tons of things you can do.
 
-![Rear](https://raw.githubusercontent.com/devicefactory/share/master/media/df1/df1-oem-front.png)
+![Rear Battery](https://raw.githubusercontent.com/devicefactory/share/master/media/df1/df1-rear-battery-door.png)
 
 Here's a highlevel overview of the features:
 
@@ -14,8 +14,6 @@ Here's a highlevel overview of the features:
 * Antenna range : 150 - 250ft line of sight (subject to effects from surroundings)
 * Upgradeable firmware over the air
 
-![Rear](https://raw.githubusercontent.com/devicefactory/share/master/media/df1/df1-rear.png)
-![Rear](https://raw.githubusercontent.com/devicefactory/share/master/media/df1/df1-rear-battery-door.png)
 
 
 ## Discovering What's Inside
