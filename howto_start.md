@@ -75,7 +75,7 @@ You'll notice that these services exist in DF1:
 For fun, let's try to toggle the RGB LED inside of DF1.
 For this, you will need to:
 
-* Find Service `0xAA60`
-* Under that service, find Characteristic `0xAA62`
-* Write hex value `01` into that characteristic
+# Find Service `0xAA60`
+# Under that service, find Characteristic `0xAA62`
+# Write hex value `01` into that characteristic
 
