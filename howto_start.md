@@ -33,6 +33,7 @@ There are various BLE apps on the appstore that can easily discover any BLE capa
 
 Most of these apps will first discover and represent the BLE device in the following object hierarchy:
 
+```
 >
 >  Device --->  Service1  --->  Characteristic1  --->  Read/Write
 >                               Characteristic2  --->  Read/Notification
@@ -40,6 +41,7 @@ Most of these apps will first discover and represent the BLE device in the follo
 >               Service2  --->  Characteristic1  --->  Read/Notification
 >                               ...
 >                ...    
+```
 
 
 That said, trying downloading any one of these free apps.
