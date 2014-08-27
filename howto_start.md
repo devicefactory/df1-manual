@@ -69,7 +69,7 @@ You'll notice that these services exist in DF1:
 | Test Service (UUID: AA60)         | Allows toggle of LED's
 | OAD Service (custom)              | Only used for over-air-update.
  
-![DF Services on LightBlue App](https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_df1_top.png)
+<img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_df1_top.png alt="DF Services on LightBlue App" width=200>
 
 ## Light Me Up!
 
