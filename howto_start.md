@@ -96,7 +96,7 @@ Lastly, enter `00` to turn off the LED.
 
 ## Streaming Data
 
-Now let's try something a LOT more interesting. We are going to try to stream x,y,z 8bit acceleration values!
+Now let's try something a LOT more interesting. We are going to try to stream x,y,z 8bit acceleration values off of DF1!
 
 1. Find the Accelerometer Service `0xAA10` : it's the service with largest number of characteristics
 
