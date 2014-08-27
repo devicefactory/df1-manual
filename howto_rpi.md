@@ -4,3 +4,10 @@ Interested in interacting with DF1 from Raspberry Pi or just hacking BLE in gene
 You've come to the right place (or tutorial)!
 
 <img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/rpi_setup.jpg width=600>
+
+## Prerequisites
+
+* Raspberry Pi (Model B)
+* BLE Dongle
+* SD Card (8BG preferred) with necessary software installed.
+* Optional: enclosure
