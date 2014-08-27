@@ -21,7 +21,7 @@ Here's a highlevel overview of the features:
 
 ## Discovering What's Inside
 
-First a bit of glossary:
+First, a bit of glossary:
   
 | Term            | Description                                                                           |
 |:--------------  |:------------------------------------------------------------------------------------- |
