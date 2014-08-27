@@ -54,9 +54,9 @@ hierarchy:
 >                ...    
 ```
 
-When you "scan" for the devices, our DF1 should show up.
+When you "scan" for the devices, our DF1 should show up. Select DF1 from the list.
 [LightBlue](https://itunes.apple.com/us/app/lightblue-bluetooth-low-energy/id557428110?mt=8) will also allow you to
-browse the contents of DF1. It will discover list of services and their associated characteristics like so:
+browse the services under DF1. For each service, list of characteristics are also displayed liked so:
 
 <img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_df1_top.png alt="DF Services on LightBlue App" width=250>
 
