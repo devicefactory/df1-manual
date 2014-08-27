@@ -117,6 +117,25 @@ Now let's try something a LOT more interesting. We are going to try to stream x,
 
   <img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_xyz8.png width=250>
 
-5. Hit "Listen for notifications" button.
+5. Hit "Listen for notifications" button. You'll notice the hex values getting pumped into the app.
+
+  <img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_xyz8data.png width=250>
+
+  You'll notice that the data looks like:
+
+  `0xFF013F`
+
+  These are hex values representing 3 bytes, 1 byte per axis. Thus, you are seeing unsigned 8 bit integer per axis.
+  This simple python lines show what these 3 bytes contain. More on this in later tutorial...
+
+  ```{python}
+  In [11]: import struct
+
+  In [13]: xyz = struct.unpack('<bbb', '\xFF\x01\x3F')  # 'b' means signed byte
+
+  In [14]: print [i/64. for i in xyz]
+  [-0.015625, 0.015625, 0.984375]
+  ```
+
 
 
