@@ -92,3 +92,31 @@ Enter `02` next. You'll see the green LED.
 Enter `04` afterwards. Finally, the blue LED will light up.
 
 Lastly, enter `00` to turn off the LED.
+
+
+## Stream Data
+
+Now let's try something a LOT more interesting. We are going to try to stream x,y,z 8bit acceleration values!
+
+1. Find the Accelerometer Service `0xAA10` : it's the service with largest number of characteristics
+
+  <img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_acceluuid.png width=250>
+  
+2. The second on the list is Enable Cfg Characteristic `0xAA12`. Select this.
+
+  <img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_enablecfg.png width=250>
+
+3. Write hexvalue `01` into the Enable Cfg Characteristic.
+
+  <img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_writehex.png width=250>
+
+  If successful, the green LED will toggle briefly, and then blue LED will toggle approximately every 5 seconds to
+  indicate that the accelerometer is turned on.
+
+4. Locate XYZ Data Cfg.
+
+  <img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_xyz8.png width=250>
+
+5. Hit "Listen for notifications" button.
+
+
