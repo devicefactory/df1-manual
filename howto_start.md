@@ -20,13 +20,13 @@ Here's a highlevel overview of the features:
 
 First a bit of glossary:
   
-  | Term            | Description                                                                           |
-  |:--------------  |:------------------------------------------------------------------------------------- |
-  | BLE             | Bluetooth Low Energy, otherwise known as Bluetooth Smart, Smart Ready.                |
-  | Central         | Device associated with scanning and discovering other BLE devices.                    |
-  | Peripheral      | Device that is discoverable - it advertises and serves data.                          |
-  | Services        | A unit representing logical grouping of Characteristics.                              |
-  | Characteristics | Data generating "slots". Think of them as drawers from which you can retrieve values. |
+| Term            | Description                                                                           |
+|:--------------  |:------------------------------------------------------------------------------------- |
+| BLE             | Bluetooth Low Energy, otherwise known as Bluetooth Smart, Smart Ready.                |
+| Central         | Device associated with scanning and discovering other BLE devices.                    |
+| Peripheral      | Device that is discoverable - it advertises and serves data.                          |
+| Services        | A unit representing logical grouping of Characteristics.                              |
+| Characteristics | Data generating "slots". Think of them as drawers from which you can retrieve values. |
 
 Let's first discover the device using an iPhone / iPod.
 There are various BLE apps on the appstore that can easily discover any BLE capable peripherals.
