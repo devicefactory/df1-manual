@@ -94,7 +94,7 @@ Enter `04` afterwards. Finally, the blue LED will light up.
 Lastly, enter `00` to turn off the LED.
 
 
-## Stream Data
+## Streaming Data
 
 Now let's try something a LOT more interesting. We are going to try to stream x,y,z 8bit acceleration values!
 
