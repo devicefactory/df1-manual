@@ -58,7 +58,7 @@ When you "scan" for the devices, our DF1 should show up.
 [LightBlue](https://itunes.apple.com/us/app/lightblue-bluetooth-low-energy/id557428110?mt=8) will also allow you to
 browse the contents of DF1. It will discover list of services and their associated characteristics like so:
 
-<img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_df1_top.png alt="DF Services on LightBlue App" width=200>
+<img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_df1_top.png alt="DF Services on LightBlue App" width=250>
 
 You'll notice that these services exist in DF1:
 
@@ -83,7 +83,7 @@ For this, you will need to:
 
 The screenshot should look like the following. Scroll to the section where it says "write value".
 
-<img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_testuuid.png width=200>
+<img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_testuuid.png width=250>
 
 Enter `01` as the hexvalue. You'll see the red LED light up!
 Enter `02` next. You'll see the green LED.
