@@ -34,7 +34,14 @@ First a bit of glossary:
 Let's first discover the device using an iPhone / iPod.
 There are various BLE apps on the appstore that can easily discover any BLE capable peripherals.
 
-Most of these apps will first discover and represent the BLE device in the following object hierarchy:
+* [TI BLE Multitool](https://itunes.apple.com/us/app/ti-ble-multitool/id580494818?mt=8)
+* [LightBlue](https://itunes.apple.com/us/app/lightblue-bluetooth-low-energy/id557428110?mt=8)
+
+For this tutorial, let's try using LightBlue app.
+
+Most of the BLE browser apps will first discover the device and allow you to select it.
+Once the device is selected, the capabilities of the device is presented in the following object
+hierarchy:
 
 ```
 >
@@ -46,16 +53,33 @@ Most of these apps will first discover and represent the BLE device in the follo
 >                ...    
 ```
 
-
-That said, trying downloading any one of these free apps.
-
-* [TI BLE Multitool](https://itunes.apple.com/us/app/ti-ble-multitool/id580494818?mt=8)
-* [LightBlue](https://itunes.apple.com/us/app/lightblue-bluetooth-low-energy/id557428110?mt=8)
-
 When you "scan" for the devices, our DF1 should show up.
 [LightBlue](https://itunes.apple.com/us/app/lightblue-bluetooth-low-energy/id557428110?mt=8) will also allow you to
 browse the contents of DF1. It will discover list of services and their associated characteristics.
 
+You'll notice that these services exist in DF1:
+
+* Device Information Service
+
+  Contains the device name, firmware, hardware versions.
+
+* Battery Service
+  
+  Allows notification of battery levels.
+
+* Acceleration Service (UUID: AA10)
+
+  Various "nobs and buttons" to configure the features of the accelerometer.
+  The accelerometer we are using is the top-of-the-line low g accelerometer from 
+  Freescale: (MMA8451Q)[http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MMA8451Q].
+
+* Test Service (UUID: AA60)
+
+  Allows toggle of LED's
+
+* OAD Service (custom)
+
+  Only used for over-air-update.
 
 ## Light Me Up!
 
