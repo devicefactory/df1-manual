@@ -72,7 +72,7 @@ You'll notice that these services exist in DF1:
 
   Various "nobs and buttons" to configure the features of the accelerometer.
   The accelerometer we are using is the top-of-the-line low g accelerometer from 
-  Freescale: (MMA8451Q)[http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MMA8451Q].
+  Freescale: [MMA8451Q](http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MMA8451Q).
 
 * Test Service (UUID: AA60)
 
