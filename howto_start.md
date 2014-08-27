@@ -77,16 +77,15 @@ You'll notice that these services exist in DF1:
 For fun, let's try to toggle the RGB LED inside of DF1.
 For this, you will need to:
 
-1. Find Service `0xAA60`
-2. Under that service, find Characteristic `0xAA62`
+1. Find the Test Service `0xAA60`
+2. Under that service, find Test Config Characteristic `0xAA62`
 3. Write hex value `01` into that characteristic
 
 The screenshot should look like the following. Scroll to the section where it says "write value".
 
 <img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_testuuid.png width=250>
 
-Enter `01` as the hexvalue. You'll see the red LED light up!
-Enter `02` next. You'll see the green LED.
-Enter `04` afterwards. Finally, the blue LED will light up.
-Lastly, enter `00` to turn off the LED.
-
+> Enter `01` as the hexvalue. You'll see the red LED light up!
+> Enter `02` next. You'll see the green LED.
+> Enter `04` afterwards. Finally, the blue LED will light up.
+> Lastly, enter `00` to turn off the LED.
