@@ -102,7 +102,7 @@ Now let's try something a LOT more interesting. We are going to try to stream x,
 
   <img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_acceluuid.png width=250>
   
-2. The second on the list is Enable Cfg Characteristic `0xAA12`. Select this.
+2. The second on the list is Enable Cfg Characteristic `0xAA12`. Select that and you'll see the following screen.
 
   <img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_enablecfg.png width=250>
 
