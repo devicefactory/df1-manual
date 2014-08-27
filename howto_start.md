@@ -82,7 +82,7 @@ For this, you will need to:
 
 The screenshot should look like the following. Scroll to the section where it says "write value".
 
-![DF Test UUID on LightBlue App](https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_testuuid.png)
+<img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_testuuid.png width=200>
 
 Enter `01` as the hexvalue. You'll see the red LED light up!
 Enter `02` next. You'll see the green LED.
