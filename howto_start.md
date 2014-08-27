@@ -113,7 +113,7 @@ Now let's try something a LOT more interesting. We are going to try to stream x,
   If successful, the green LED will toggle briefly, and then blue LED will toggle approximately every 5 seconds to
   indicate that the accelerometer is turned on.
 
-4. Locate XYZ Data Cfg.
+4. Locate XYZ Data Cfg `0xAA13`.
 
   <img src=https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_xyz8.png width=250>
 
