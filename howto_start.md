@@ -61,17 +61,17 @@ browse the contents of DF1. It will discover list of services and their associat
 You'll notice that these services exist in DF1:
 
 
-Service                            Description
----------------------------------  --------------------------------------------------------------------------------------
-Device Information Service         Contains the device name, firmware, hardware versions.
-Battery Service                    Allows notification of battery levels.
-Acceleration Service (UUID: AA10)  Various "nobs and buttons" to configure the features of the accelerometer.
-                                   The accelerometer we are using is the top-of-the-line low g accelerometer from 
-                                   Freescale:
-                                   [MMA8451Q](http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MMA8451Q).
-Test Service (UUID: AA60)          Allows toggle of LED's
-OAD Service (custom)               Only used for over-air-update.
-
+| Service                           | Description
+| :-------------------------------- |:-------------------------------------------------------------------------------------
+| Device Information Service        | Contains the device name, firmware, hardware versions.
+| Battery Service                   | Allows notification of battery levels.
+| Acceleration Service (UUID: AA10) | Various "nobs and buttons" to configure the features of the accelerometer.
+|                                   | The accelerometer we are using is the top-of-the-line low g accelerometer from 
+|                                   | Freescale:
+|                                   | [MMA8451Q](http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MMA8451Q).
+| Test Service (UUID: AA60)         | Allows toggle of LED's
+| OAD Service (custom)              | Only used for over-air-update.
+ 
 
 ## Light Me Up!
 
