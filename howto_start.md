@@ -69,6 +69,7 @@ You'll notice that these services exist in DF1:
 | Test Service (UUID: AA60)         | Allows toggle of LED's
 | OAD Service (custom)              | Only used for over-air-update.
  
+![DF Services on LightBlue App](https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_df1_top.png)
 
 ## Light Me Up!
 
@@ -79,5 +80,12 @@ For this, you will need to:
 2. Under that service, find Characteristic `0xAA62`
 3. Write hex value `01` into that characteristic
 
+The screenshot should look like the following. Scroll to the section where it says "write value".
 
+![DF Test UUID on LightBlue App](https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/lightblue_testuuid.png)
+
+Enter `01` as the hexvalue. You'll see the red LED light up!
+Enter `02` next. You'll see the green LED.
+Enter `04` afterwards. Finally, the blue LED will light up.
+Lastly, enter `00` to turn off the LED.
 
