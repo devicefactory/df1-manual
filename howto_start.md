@@ -7,6 +7,7 @@ There are tons of things you can do.
 
 Here's a highlevel overview of the features:
 
+* Fully realized device that's open source!
 * Accelerometer capable of 2/4/8g acceleration detection in both 8 or 14 bit resolution
 * Motion detection such as tap, shake, freefall.
 * Easily replaceable battery
