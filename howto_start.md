@@ -16,7 +16,7 @@ Here's a highlevel overview of the features:
 * Upgradeable firmware over the air
 * RGB LED
 * FCC Certified
-* High-quality injection molded plastic enclosure
+* High-quality injection molded ABS plastic enclosure
 
 
 ## Discovering What's Inside
