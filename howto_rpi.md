@@ -22,7 +22,7 @@ But before we begin, we need to make sure Raspberry Pi is equipped with all the 
 
 * SD Card (8BG preferred) with necessary software installed.
 
-  Unless you want to install all the necessary packages yourself, we suggest using the Raspberry Pi image we've prepared.
+  Unless you want to install all the necessary packages yourself, we suggest using the Raspberry Pi [image](http://devicefactory.com/downloads/rpi_df_201402.img) we've prepared.
   Refer to the installation section below for more details.  
 
 * Optional: enclosure 
@@ -40,7 +40,7 @@ But before we begin, we need to make sure Raspberry Pi is equipped with all the 
 
 **If You Prefer the Image**
 
-* First click on this link: **[Download RPi Image](link)**
+* First click on this link: **[Download RPi Image](http://devicefactory.com/downloads/rpi_df_201402.img)**
 
   The image contains all the necessary packages already compiled and installed for you to
   just get up and running with BLE.
