@@ -48,9 +48,9 @@ But before we begin, we need to make sure Raspberry Pi is equipped with all the 
 * Install the image to an SD card at least 4GB in size
   
   Follow these tutorials to setup your SD card.
-  [For Linux](http://www.raspberrypi.org/documentation/installation/installing-images/linux.md) 
-  [For MacOS](http://www.raspberrypi.org/documentation/installation/installing-images/mac.md)
-  [For Windows](http://www.raspberrypi.org/documentation/installation/installing-images/windows.md)
+  - [For Linux](http://www.raspberrypi.org/documentation/installation/installing-images/linux.md) 
+  - [For MacOS](http://www.raspberrypi.org/documentation/installation/installing-images/mac.md)
+  - [For Windows](http://www.raspberrypi.org/documentation/installation/installing-images/windows.md)
 
 * Optional: Extending the partition
 
