@@ -34,6 +34,7 @@ First, a bit of glossary:
 Let's first discover the device using an iPhone / iPod.
 There are various BLE apps on the appstore that can easily discover any BLE capable peripherals.
 
+* [DF1 App](https://github.com/devicefactory/df1-ios)
 * [TI BLE Multitool](https://itunes.apple.com/us/app/ti-ble-multitool/id580494818?mt=8)
 * [LightBlue](https://itunes.apple.com/us/app/lightblue-bluetooth-low-energy/id557428110?mt=8)
 
