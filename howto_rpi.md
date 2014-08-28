@@ -55,7 +55,7 @@ But before we begin, we need to make sure Raspberry Pi is equipped with all the 
 * Optional: Extending the partition
 
   > If you have a larger SD card, you'll notice that writing the image only allows RPi to "see" only 4GB of usable space.
-  > You can extend the root partition to make use of all available space, but bit of **<font color="red">caution</font>** is required.
+  > You can extend the root partition to make use of all available space, but bit of <font color="red">caution</font> is required.
   > Skip this section if you are unsure about what you are doing.
   >
   > First insert the SD card to a linux machine. If you don't have a linux machine, follow other tutorials online
