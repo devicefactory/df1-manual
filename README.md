@@ -22,7 +22,7 @@ communicate with DF1.
 
   Start here! This document describes how to get up and running with our DF1.
 
-* [Raspberry Pi and DF1](howto_ios.md)
+* [Raspberry Pi and DF1](howto_rpi.md)
 
   Learn how to build your own RPi base station. RPi can talk BLE with a small tweaks, and we even
   provide a customized downloadable image you can use. This way, you can use RPi to interact with 
