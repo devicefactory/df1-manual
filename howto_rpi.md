@@ -27,7 +27,7 @@ But before we begin, we need to make sure Raspberry Pi is equipped with all the 
 
 * Optional: enclosure 
   
-  Raspberry Pi looks more sweet with an enclosure.  :-)
+  Raspberry Pi looks sweeter with an enclosure.  :-)
 
 * Optional: Lapdock
 
