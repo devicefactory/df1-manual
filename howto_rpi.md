@@ -54,22 +54,23 @@ But before we begin, we need to make sure Raspberry Pi is equipped with all the 
 
 * Optional: Extending the partition
 
-  If you have a larger SD card, you'll notice that writing the image only allows RPi to "see" only 4GB of usable space.
-  You can extend the root partition to make use of all available space, but bit of **caution** is required.
-  Skip this section if you are unsure about what you are doing.
-
-  First insert the SD card to a linux machine. If you don't have a linux machine, follow other tutorials online
-  on extending raspberry pi partition on SD cards.
-
-  This command will tell you which "disks" are available on your system.
+  > If you have a larger SD card, you'll notice that writing the image only allows RPi to "see" only 4GB of usable space.
+  > You can extend the root partition to make use of all available space, but bit of **caution** is required.
+  > Skip this section if you are unsure about what you are doing.
+  >
+  > First insert the SD card to a linux machine. If you don't have a linux machine, follow other tutorials online
+  > on extending raspberry pi partition on SD cards.
+  >
+  > This command will tell you which "disks" are available on your system.
 
   ```
   $ fdisk -l 
   ```
-  Choose the device corresponding to the SD card.
-  **BEWARE**: if you choose the wrong disk in the next step, you can mess up your linux machine.
 
-  In my case, I had the SD card mounted on /dev/sdd.
+  > Choose the device corresponding to the SD card.
+  > **BEWARE**: if you choose the wrong disk in the next step, you can mess up your linux machine.
+  >
+  > In my case, I had the SD card mounted on /dev/sdd.
 
   ```
   $ sudo parted /dev/sdd
@@ -91,13 +92,13 @@ But before we begin, we need to make sure Raspberry Pi is equipped with all the 
   (parted) quit
   ```
  
-  Now that the partition table was modified using `parted`, I can extend the filesystem.
+  > Now that the partition table was modified using `parted`, I can extend the filesystem.
 
   ```
   sudo e2fsck -f /dev/sdd2
   sudo resize2fs /dev/sdd2
   ```
-  That's it, now you can insert the SD card into RPi and make use of all available space.
+  > That's it, now you can insert the SD card into RPi and make use of all available space.
 
 * Check the tools
 
