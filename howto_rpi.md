@@ -42,15 +42,15 @@ But before we begin, we need to make sure Raspberry Pi is equipped with all the 
 
 * First click on this link: **[Download RPi Image](link)**
 
-  The image contains all the necessary packages already compiled and installed for you to
-  just get up and running with BLE.
+  > The image contains all the necessary packages already compiled and installed for you to
+  > just get up and running with BLE.
 
 * Install the image to an SD card at least 4GB in size
   
-  Follow these tutorials to setup your SD card.
-  - [For Linux](http://www.raspberrypi.org/documentation/installation/installing-images/linux.md) 
-  - [For MacOS](http://www.raspberrypi.org/documentation/installation/installing-images/mac.md)
-  - [For Windows](http://www.raspberrypi.org/documentation/installation/installing-images/windows.md)
+  > Follow these tutorials to setup your SD card.
+  > - [For Linux](http://www.raspberrypi.org/documentation/installation/installing-images/linux.md) 
+  > - [For MacOS](http://www.raspberrypi.org/documentation/installation/installing-images/mac.md)
+  > - [For Windows](http://www.raspberrypi.org/documentation/installation/installing-images/windows.md)
 
 * Optional: Extending the partition
 
