@@ -329,5 +329,8 @@ Take note that the following sections also apply to any linux machine with BLE u
   ```{perl}
   $ gatttool -b 84:DD:20:EA:F3:F0 -i hci0 --char-write --handle=0x002d -n 01 && \
     gatttool -b 84:DD:20:EA:F3:F0 -i hci0 --char-write-req --handle=0x0031 -n 0100 --listen \\
-    | perl -ne 'if(/.*value: (\w+) (\w+) (\w+)/) { ($x,$y,$z) = ($1,$2,$3); printf("%f,%f,%f\n", unpack("c",pack("C",hex($x)))/64., unpack("c",pack("C",hex($y)))/64., unpack("c",pack("C",hex($z)))/64.); }'
+    | perl -ne 'if(/.*value: (\w+) (\w+) (\w+)/) { ($x,$y,$z) = ($1,$2,$3); \\
+       printf("%f,%f,%f\n", unpack("c",pack("C",hex($x)))/64., \\
+                            unpack("c",pack("C",hex($y)))/64., \\
+                            unpack("c",pack("C",hex($z)))/64.); }'
   ```
