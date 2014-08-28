@@ -294,4 +294,32 @@ Take note that the following sections also apply to any linux machine with BLE u
   Notification handle = 0x0038 value: a2
   ```
 
+  In order to unsubscribe from the notification handle, simply write `0000` to the same handle.
+  ```
+  > char-write-cmd 0x0039 0000
+  ``` 
+
+  And turn off the accelerometer to save battery life.
+  ```
+  > char-write-cmd 0x002d 00
+  ``` 
+
   There are bunch of other notification handles DF1 supports. Take a gander at this [list](https://github.com/devicefactory/df1-manual/blob/master/services.md).
+
+
+6. Stream data without interactivity
+
+  Hopefully you can see how the command line interface can immediately give you access to DF1's data.
+  But sometimes you want to just automate streaming of data.
+  `gatttool` gives you the ability to just pipe the data to stdout without going through the interactive session.
+
+  Try the following commands on your shell. Note the backslash '\'. That's intentional and it indicates continuation of the command.
+
+  ```
+  $ gatttool -b 84:DD:20:EA:F3:F0 -i hci0 --char-write --handle=0x002d -n 01 && \
+    gatttool -b 84:DD:20:EA:F3:F0 -i hci0 --char-write-req --handle=0x0031 -n 0100 --listen 
+  ```
+  To turn off,
+  ```
+  $ gatttool -b 84:DD:20:EA:F3:F0 -i hci0 --char-write --handle=0x002d -n 00
+  ```
