@@ -56,7 +56,7 @@ But before we begin, we need to make sure Raspberry Pi is equipped with all the 
 
   If you have a larger SD card, you'll notice that writing the image only allows RPi to "see" only 4GB of usable space.
 
-  > **CAUTION** You can extend the partition under your SD card, but it's easy to cause a serious headache if you don't do it right.
+  > **CAUTION** You can extend the partition under your SD card, but it's easy to cause yourself serious headache if you mess it up.
   > Please **Skip** this section if you are unsure about what you are doing.
    
   First insert the SD card to a linux machine. If you don't have a linux machine, follow other tutorials online
@@ -160,7 +160,7 @@ Take note that the following sections also apply to any linux machine with BLE u
           TX bytes:939 acl:0 sco:0 commands:36 errors:0
   ```
 
-  Run
+  Run this to turn on the adaptor.
   ```
   $ sudo hciconfig hci0 up
   ```
@@ -198,7 +198,7 @@ Take note that the following sections also apply to any linux machine with BLE u
   [84:DD:20:EA:F3:F0][LE]> 
   ```
 
-  Try typing and you'll get:
+  Try typing `connect` and you'll get:
 
   ```
   [84:DD:20:EA:F3:F0][LE]> connect
@@ -206,7 +206,7 @@ Take note that the following sections also apply to any linux machine with BLE u
   Connection successful
   ```
 
-4. Discover and Communicate
+4. Discover and Toggle
 
   Under `gatttool` interface, try the following commands:
 
@@ -226,17 +226,72 @@ Take note that the following sections also apply to any linux machine with BLE u
   attr handle: 0x0072, end grp handle: 0xffff uuid: f000ffc0-0451-4000-b000-000000000000
   ```
 
+  Btw, you can get more commands and their usage by typing
+  ```
+  help
+  ```
+
+  Now, the following command will take a bit longer, and it will come back with exhaustive list of all 
+  available characteristics in the peripheral.
   ```
   > characteristics
   ```
-  This command will take a bit longer, and it will come back with exhaustive list of all 
-  available characteristics in the peripheral.
 
   Let's try to toggle the LED. Locate the interested UUID by looking at the long string that comes after
-  `uuid:` on each line. For example, you can spot the Test Service characteristics here:
+  `uuid:` on each line. For example, you can spot the Test Conf characteristic `aa62` here:
 
   ```
-  handle: 0x006c, char properties: 0x02, char value handle: 0x006d, uuid: 0000**aa61**-0000-1000-8000-00805f9b34fb
-  handle: 0x006f, char properties: 0x0a, char value handle: 0x0070, uuid: 0000**aa62**-0000-1000-8000-00805f9b34fb
+  handle: 0x006c, char properties: 0x02, char value handle: 0x006d, uuid: 0000aa61-0000-1000-8000-00805f9b34fb
+  handle: 0x006f, char properties: 0x0a, char value handle: 0x0070, uuid: 0000aa62-0000-1000-8000-00805f9b34fb
   ```
 
+  Let's write to that handle to turn on the RED LED. Notice that the `uuid: 0000aa62-0000-1000-8000-00805f9b34fb`
+  corresponds to `char value handle: 0x0070`. We will write to that handle.
+
+  ```
+  > char-write-cmd 0x0070 01
+  > char-write-cmd 0x0070 00
+  > char-write-cmd 0x0070 02
+  > char-write-cmd 0x0070 00
+  ```
+
+5. Trying Tap Event!
+
+  In the previous tutorial, we've shown how to get 8bit xyz data.
+  This time, we are going to subscribe to tap event motion from DF1.
+
+  First enable the tap event mode by writing to the handle associated with Accelerometer Enable UUID `aa12`.
+  The UUID `aa12` has char value handle address `0x002d`.
+
+  ```
+  handle: 0x002c, char properties: 0x0a, char value handle: 0x002d, uuid: 0000aa12-0000-1000-8000-00805f9b34fb
+  ```
+  
+  ```
+  > char-write-cmd 0x002d 04
+  ```
+
+  Now the crucial part. Subscribing from notification handle requires a bit of knowledge about how BLE characteristics
+  are organized. The notification write handle is always 1 address higher than the actual notification address.
+
+  The tap event UUID `aa15` is located here:
+
+  ```
+  handle: 0x0037, char properties: 0x12, char value handle: 0x0038, uuid: 0000aa15-0000-1000-8000-00805f9b34fb
+  ```
+  Notice the char value handle `0x0038`. We add 1 to get `0x0039`. Also, notification request handles are 2 bytes long.
+  And these bytes are organized in little-endian. So we have to write:
+
+  ```
+  > char-write-cmd 0x0039 0100
+  ``` 
+
+  Ok! Now try tapping DF1 and see the values like these show up on your terminal:
+  
+  ```
+  Notification handle = 0x0038 value: 91
+  Notification handle = 0x0038 value: a2
+  Notification handle = 0x0038 value: a2
+  ```
+
+  There are bunch of other notification handles DF1 supports. Take a gander at this [list](https://github.com/devicefactory/df1-manual/blob/master/services.md).
