@@ -55,7 +55,7 @@ But before we begin, we need to make sure Raspberry Pi is equipped with all the 
 * Optional: Extending the partition
 
   > If you have a larger SD card, you'll notice that writing the image only allows RPi to "see" only 4GB of usable space.
-  > You can extend the root partition to make use of all available space, but bit of <font color="red">caution</font> is required.
+  > You can extend the root partition to make use of all available space, but bit of **caution** is required.
   > Skip this section if you are unsure about what you are doing.
   >
   > First insert the SD card to a linux machine. If you don't have a linux machine, follow other tutorials online
@@ -102,16 +102,17 @@ But before we begin, we need to make sure Raspberry Pi is equipped with all the 
 
 * Check the tools
 
-  Run these commands on the command line to confirm:
+  > Run these commands on the command line to confirm:
 
   ```
   $ which hciconfig
   $ which hcitool
   $ which gatttool
   ```
-  These commands should be available under `/usr/local/bin`.
 
-  As a bonus, you should also see:
+  > These commands should be available under `/usr/local/bin`.
+  >
+  > As a bonus, you should also see:
 
   ```
   $ which node
@@ -123,17 +124,17 @@ But before we begin, we need to make sure Raspberry Pi is equipped with all the 
 
 * Download and Install [bluez](http://www.bluez.org/) package.
   
-  You can find some helpful [instructions](https://learn.adafruit.com/pibeacon-ibeacon-with-a-raspberry-pi/setting-up-the-pi)
-  on how to get this package installed on Raspberry Pi. You will need an active network connection, because required libraries
-  need to be installed using debian pkg manager (apt-get) first.
-  We are currently using older 5.4 version, but the newer versions should work just fine. 
+  > You can find some helpful [instructions](https://learn.adafruit.com/pibeacon-ibeacon-with-a-raspberry-pi/setting-up-the-pi)
+  > on how to get this package installed on Raspberry Pi. You will need an active network connection, because required libraries
+  > need to be installed using debian pkg manager (apt-get) first.
+  > We are currently using older 5.4 version, but the newer versions should work just fine. 
 
-  One bit of note: the installation of required libs as well as compilation of bluez package will take a while.
-  It would be faster to just download the 4GB file and write the image to an SD. 
+  > One bit of note: the installation of required libs as well as compilation of bluez package will take a while.
+  > It would be faster to just download the 4GB file and write the image to an SD. 
 
 * Optional: Install node.js
 
-  With the help of [noble](https://github.com/sandeepmistry/noble) Node.js library, BLE development gets much easier.
+  > With the help of [noble](https://github.com/sandeepmistry/noble) Node.js library, BLE development gets much easier.
 
 
 ## Testing BLE
