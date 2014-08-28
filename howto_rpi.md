@@ -310,7 +310,7 @@ Take note that the following sections also apply to any linux machine with BLE u
 6. Stream data without interactivity
 
   Hopefully you can see how the command line interface can immediately give you access to DF1's data.
-  But sometimes you want to just automate streaming of data.
+  But sometimes you just want to automate data acquisition.
   `gatttool` gives you the ability to just pipe the data to stdout without going through the interactive session.
 
   Try the following commands on your shell. Note the backslash '\'. That's intentional and it indicates continuation of the command.
