@@ -18,9 +18,7 @@ But before we begin, we need to make sure Raspberry Pi is equipped with all the 
 
   [Pluggable USB](http://plugable.com/products/usb-bt4le) dongle is the one we are using.
   You can find it in [Amazon.com](http://www.amazon.com/Plugable-Bluetooth-Adapter-Windows-Compatible/dp/B009ZIILLI/ref=sr_1_fkmr1_2?ie=UTF8&qid=1409195842&sr=8-2-fkmr1&keywords=pluggable+usb+ble+dongle) for just $13 as of this writing.
-  
-  There are various supported BLE dongles out there. 
-  Here is a [list](https://github.com/sandeepmistry/noble/wiki/Compatible-devices)
+  There are various supported BLE dongles out there.  Here is a [list](https://github.com/sandeepmistry/noble/wiki/Compatible-devices)
 
 * SD Card (8BG preferred) with necessary software installed.
 
@@ -42,7 +40,7 @@ But before we begin, we need to make sure Raspberry Pi is equipped with all the 
 
 **If You Prefer the Image**
 
-* First click on this link: **[Download RPi Image](link)
+* First click on this link: **[Download RPi Image](link)**
 
   The image contains all the necessary packages already compiled and installed for you to
   just get up and running with BLE.
