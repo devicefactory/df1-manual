@@ -1,6 +1,6 @@
 # Node.js and DF1
 
-![nodejs_logo](https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/nodejs_logo_light.png)
+![nodejs_logo](https://raw.githubusercontent.com/devicefactory/df1-manual/master/pics/nodejs_logo_and_df_logo.png)
 
 There's an excellent library called [noble](https://github.com/sandeepmistry/noble) that gives javascript access to 
 the BLE world. The library implements executable C binary that handles low-level BLE communication, acting as a "bridge"
