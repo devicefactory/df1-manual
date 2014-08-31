@@ -228,7 +228,7 @@ Take note that the following sections also apply to any linux machine with BLE u
 
   Btw, you can get more commands and their usage by typing
   ```
-  help
+  > help
   ```
 
   Now, the following command will take a bit longer, and it will come back with exhaustive list of all 
@@ -255,7 +255,11 @@ Take note that the following sections also apply to any linux machine with BLE u
   > char-write-cmd 0x0070 00
   ```
 
-5. Trying Tap Event!
+## Subsribing to Data
+
+From `gatttool`'s interactive commandline, try the following:
+
+1. Trying Tap Event!
 
   In the previous tutorial, we've shown how to get 8bit xyz data.
   This time, we are going to subscribe to tap event motion from DF1.
@@ -307,7 +311,7 @@ Take note that the following sections also apply to any linux machine with BLE u
   There are bunch of other notification handles DF1 supports. Take a gander at this [list](https://github.com/devicefactory/df1-manual/blob/master/services.md).
 
 
-6. Stream data without interactivity
+2. Stream data without interactivity
 
   Hopefully you can see how the command line interface can immediately give you access to DF1's data.
   But sometimes you just want to automate data acquisition.
