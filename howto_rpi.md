@@ -338,3 +338,28 @@ From `gatttool`'s interactive commandline, try the following:
                             unpack("c",pack("C",hex($y)))/64., \\
                             unpack("c",pack("C",hex($z)))/64.); }'
   ```
+
+## Simple Python Script
+
+The following [python script](py/df1pexpect.py) merely wraps `gatttool` using `pexpect` python module.
+This sample code is included along with this repository, under `py` directory.
+
+You will need to install the python module `pexpect` first:
+
+```
+sudo pip install pexpect
+```
+
+First find out your DF1's bluetooth address by running `sudo hcitool lescan`.
+(Mine was 1C:BA:8C:2F:CF:43)
+
+You can then simply issue the following command to extract XYZ values into machine readeable format:
+
+```
+# retrieve 8 bit XYZ data
+./df1pexpect.py 1C:BA:8C:2F:CF:43 acc
+# retrieve 14 bit XYZ data
+./df1pexpect.py 1C:BA:8C:2F:CF:43 acc14
+# retrieve battery level
+./df1pexpect.py 1C:BA:8C:2F:CF:43 batt
+```

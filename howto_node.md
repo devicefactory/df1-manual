@@ -51,4 +51,38 @@ Shout out to [sandeep](https://github.com/sandeepmistry), who's done all of this
   You can follow the README.md docs for more detailed explanation of the library.
 
 
+## Test noble
 
+When you do `npm install noble`, it should have created `node_modules/noble` sub-directory and installed
+the package for you. In that directory, you will see a test script called `dump.js`. Try running it:
+
+```
+cd node_modules/noble
+sudo node dump.js
+```
+
+It should start scanning and try to discover all services and characteristics for devices.
+The output will look something like:
+
+```{sh}
+// stateChange: poweredOn
+// connect: 1cba8c2fcf43 (df1)
+// RSSI update: -61 (df1)
+// connect: d0ff5066b767 (GTAG2:D0FF5066B767)
+// disconnect: d0ff5066b767 (GTAG2:D0FF5066B767)
+{ "d0ff5066b767":
+  { localName: "GTAG2:D0FF5066B767",
+undefined
+  }
+}
+// connect: 84dd20eaf3bc (df1)
+// RSSI update: 127 (df1)
+{ "1cba8c2fcf43":
+  { localName: "df1",
+{ '1800':
+   { name: 'Generic Access',
+     type: 'org.bluetooth.service.generic_access',
+     characteristics: {} },
+  '1801':
+  ... 
+```
