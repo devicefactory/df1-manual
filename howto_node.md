@@ -93,7 +93,9 @@ Additionally, you can try running the `test.js` in the same directory.
 sudo node test.js
 ```
 
-## Writing Code
+## Taste of noble
+
+Here are simple exercises you can do in order to get familiar with the library.
 
 * Scanning
 
@@ -199,6 +201,95 @@ sudo node test.js
   > service null type: null
   > service null type: null
   > ```
+
+* Services Object
+
+  In the similar manner, you can discover all the characteristics under each service.
+  Follow the pattern in `dump.js` for more details. But in a nutshell, you have to 
+  implement callbacks associated with `characteristicsDiscover` before issuing a call:
+
+  ```
+  service.on('characteristicsDiscover', function(characteristic) {  ... } );
+  service.discoverCharacteristics();
+  ```
+
+* Characteristics Object
+
+  Discovering characteristics will provide characteristic object as an argument into
+  the callback function from above. You can further request for descriptorDiscover for
+  each characteristic:
+
+  ```
+  characteristic.on('descriptorsDiscover', function(desc) { ... } );
+  characteristic.discoverDescriptors();
+  ```
+
+You can see there's lots of boilerplate callback functions that need to be implemented before
+we can actually get the data off of DF1. Fear not, that's why there's a wrapper class called
+`noble-device` to handle most of the common BLE connect, discover services, discover characteristic
+routines.
+
+
+## Enter noble-device Library
+
+First install [noble-device](https://github.com/sandeepmistry/noble-device).
+
+```
+npm install noble-device
+```
+
+Here, I printed the entire `test.js` in its entirety.
+Notice that it simplifiedj
+
+```{javascript}
+var async = require('async');
+
+var NobleDevice = require('./index');
+
+var TestDevice = function(peripheral) {
+  NobleDevice.call(this, peripheral);
+};
+
+NobleDevice.Util.inherits(TestDevice, NobleDevice);
+
+TestDevice.discover(function(testDevice) {
+  console.log('found ' + testDevice.uuid);
+
+  testDevice.on('disconnect', function() {
+    console.log('disconnected!');
+    process.exit(0);
+  });
+
+  async.series([
+      function(callback) {
+        console.log('connect');
+        testDevice.connect(callback);
+      },
+      function(callback) {
+        console.log('discoverServicesAndCharacteristics');
+        testDevice.discoverServicesAndCharacteristics(callback);
+      },
+      function(callback) {
+        console.log('readDeviceName');
+        testDevice.readDeviceName(function(deviceName) {
+          console.log('\tdevice name = ' + deviceName);
+          callback();
+        });
+      },
+      function(callback) {
+        // simply print the object
+        console.log(testDevice);
+        callback();
+      },
+      function(callback) {
+        console.log('disconnect');
+        testDevice.disconnect(callback);
+      }
+    ]
+  );
+});
+```
+
 
 
 ## Bit of Internals
