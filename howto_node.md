@@ -87,8 +87,109 @@ undefined
   ... 
 ```
 
+Additionally, you can try running the `test.js` in the same directory.
 
-## Internals
+```
+sudo node test.js
+```
+
+## Writing Code
+
+* Scanning
+
+  `node` has nice REPL that you can easily drop into and start testing your code.
+  Let's try a simple exercise to test the library.
+  
+  Fire up `sudo node`. We have to run with root privileges on linux to access `hci0` device.
+  
+  ```{javascript}
+  # make sure you are in the same dir as node_modules
+  var noble = require('noble')
+  
+  # check the state
+  noble.state
+  ```
+  
+  Before we start scanning for devices, let's implement 'discover' callback.
+  
+  ```{javascript}
+  noble.on('discover', function(peripheral) { console.log('found peripheral ' + peripheral.advertisement.localName + ' uuid:' + peripheral.uuid) })
+  ```
+  
+  We are just going to print the name of the device and its uuid.
+  
+  ```{javascript}
+  noble.startScanning()
+  ```
+  
+  You'll see output like the following:
+  
+  ```
+  found peripheral GTAG2:D0FF5066B767 uuid:d0ff5066b767
+  found peripheral df1 uuid:1cba8c2fcf43
+  ```
+  
+  To stop scanning,
+  
+  ```{javascript}
+  noble.stopScanning()
+  ```
+
+* Peripheral Object
+
+  We are interested in working with peripherals. There's an object associated with it, and you have to implement
+  callback functions in order to interact with it.
+
+  Let's first save the peripheral object we are interested in:
+
+  ```{javascript}
+  var p
+  noble.on('discover', function(peripheral) { if(peripheral.advertisement.localName == "df1") { p = peripheral; console.log("found df1"); noble.stopScanning();} })
+  noble.startScanning()
+  ```
+  Now, we have variable `p` representing our DF1 peripheral.
+
+  Implement the following callback functions to see what they do:
+  
+  ```{javascript}
+  p.on('connect', function() { console.log('connected to ' + p.uuid); p.updateRssi(); })
+  p.on('rssiUpdate', function(rssi) { console.log('rssi is ' + rssi); })
+  p.on('servicesDiscover', function(services) { for(i=0; i<services.length; i++) { s = services[i]; console.log('service ' + s.name + ' type: ' + s.type); }})
+  ```
+  
+  Let's try connecting.
+
+  ```{javascript}
+  p.connect()
+  ```
+
+  If successful, you'll see the following msg:
+
+  ```
+  connected to 1cba8c2fcf43
+  rssi is -59
+  ```
+
+  After that, list out the services:
+
+  ```
+  p.discoverServices()
+  ```
+  
+  Again, the output will look something like:
+
+  ```
+  service Generic Access type: org.bluetooth.service.generic_access
+  service Generic Attribute type: org.bluetooth.service.generic_attribute
+  service Device Information type: org.bluetooth.service.device_information
+  service Battery Service type: org.bluetooth.service.battery_service
+  service null type: null
+  service null type: null
+  service null type: null
+  ```
+
+
+## Bit of Internals
 
 The following section might interest people who want to understand how `noble` works under the hood.
 Skip this section if you are only interested in the javascript API.
@@ -105,6 +206,11 @@ All of the low-level communication is handled by two binaries:
   C function `hci_le_set_scan_enable`.
 
 * l2cap-ble
+
+  Binds and creates a socket connection against the underlying HCI device (often `hci0`). It then
+  acts as a bridge between the BLE device and the higher level node.js functions. The command is
+  issued through `stdin` of the process, and response is captured via `stdout`. The communication is
+  done through hex strings bi-directionally.
 
 
 In order to test HCI scanning, first run the binary on Linux.
@@ -131,3 +237,4 @@ event 84:DD:20:EA:F3:BC,public,020106,-82
 event D0:FF:50:66:B7:67,public,020105070203180218041802ff00,-73
 event D0:FF:50:66:B7:67,public,140947544147323a44304646353036364237363700,-72
 ```
+
