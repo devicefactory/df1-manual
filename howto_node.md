@@ -103,22 +103,26 @@ sudo node test.js
   Fire up `sudo node`. We have to run with root privileges on linux to access `hci0` device.
   
   ```{javascript}
-  # make sure you are in the same dir as node_modules
+  // make sure you are in the same dir as node_modules
   var noble = require('noble')
   
-  # check the state
+  // check the state
   noble.state
   ```
   
   Before we start scanning for devices, let's implement 'discover' callback.
   
   ```{javascript}
-  noble.on('discover', function(peripheral) { console.log('found peripheral ' + peripheral.advertisement.localName + ' uuid:' + peripheral.uuid) })
+  // called when new peripheral is discovered
+  noble.on('discover', function(peripheral) {
+    console.log('found peripheral ' + peripheral.advertisement.localName + ' uuid:' + peripheral.uuid)
+  })
   ```
   
   We are just going to print the name of the device and its uuid.
   
   ```{javascript}
+  // fire of BLE scanning!
   noble.startScanning()
   ```
   
@@ -144,7 +148,11 @@ sudo node test.js
 
   ```{javascript}
   var p
-  noble.on('discover', function(peripheral) { if(peripheral.advertisement.localName == "df1") { p = peripheral; console.log("found df1"); noble.stopScanning();} })
+  noble.on('discover', function(peripheral) {
+    if(peripheral.advertisement.localName == "df1") {
+      p = peripheral; console.log("found df1"); noble.stopScanning();
+    }
+  })
   noble.startScanning()
   ```
   Now, we have variable `p` representing our DF1 peripheral.
@@ -154,7 +162,11 @@ sudo node test.js
   ```{javascript}
   p.on('connect', function() { console.log('connected to ' + p.uuid); p.updateRssi(); })
   p.on('rssiUpdate', function(rssi) { console.log('rssi is ' + rssi); })
-  p.on('servicesDiscover', function(services) { for(i=0; i<services.length; i++) { s = services[i]; console.log('service ' + s.name + ' type: ' + s.type); }})
+  p.on('servicesDiscover', function(services) {
+    for(i=0; i<services.length; i++) {
+      s = services[i]; console.log('service ' + s.name + ' type: ' + s.type);
+    }
+  })
   ```
   
   Let's try connecting.
