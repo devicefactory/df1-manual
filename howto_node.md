@@ -64,28 +64,28 @@ sudo node dump.js
 It should start scanning and try to discover all services and characteristics for any discovered BLE device.
 The output will look something like:
 
-```{sh}
-// stateChange: poweredOn
-// connect: 1cba8c2fcf43 (df1)
-// RSSI update: -61 (df1)
-// connect: d0ff5066b767 (GTAG2:D0FF5066B767)
-// disconnect: d0ff5066b767 (GTAG2:D0FF5066B767)
-{ "d0ff5066b767":
-  { localName: "GTAG2:D0FF5066B767",
-undefined
-  }
-}
-// connect: 84dd20eaf3bc (df1)
-// RSSI update: 127 (df1)
-{ "1cba8c2fcf43":
-  { localName: "df1",
-{ '1800':
-   { name: 'Generic Access',
-     type: 'org.bluetooth.service.generic_access',
-     characteristics: {} },
-  '1801':
-  ... 
-```
+> ```{sh}
+> // stateChange: poweredOn
+> // connect: 1cba8c2fcf43 (df1)
+> // RSSI update: -61 (df1)
+> // connect: d0ff5066b767 (GTAG2:D0FF5066B767)
+> // disconnect: d0ff5066b767 (GTAG2:D0FF5066B767)
+> { "d0ff5066b767":
+>   { localName: "GTAG2:D0FF5066B767",
+> undefined
+>   }
+> }
+> // connect: 84dd20eaf3bc (df1)
+> // RSSI update: 127 (df1)
+> { "1cba8c2fcf43":
+>   { localName: "df1",
+> { '1800':
+>    { name: 'Generic Access',
+>      type: 'org.bluetooth.service.generic_access',
+>      characteristics: {} },
+>   '1801':
+>   ... 
+> ```
 
 Additionally, you can try running the `test.js` in the same directory.
 
@@ -177,10 +177,10 @@ sudo node test.js
 
   If successful, you'll see the following msg:
 
-  ```
-  connected to 1cba8c2fcf43
-  rssi is -59
-  ```
+  > ```
+  > connected to 1cba8c2fcf43
+  > rssi is -59
+  > ```
 
   After that, list out the services:
 
@@ -190,15 +190,15 @@ sudo node test.js
   
   Again, the output will look something like:
 
-  ```
-  service Generic Access type: org.bluetooth.service.generic_access
-  service Generic Attribute type: org.bluetooth.service.generic_attribute
-  service Device Information type: org.bluetooth.service.device_information
-  service Battery Service type: org.bluetooth.service.battery_service
-  service null type: null
-  service null type: null
-  service null type: null
-  ```
+  > ```
+  > service Generic Access type: org.bluetooth.service.generic_access
+  > service Generic Attribute type: org.bluetooth.service.generic_attribute
+  > service Device Information type: org.bluetooth.service.device_information
+  > service Battery Service type: org.bluetooth.service.battery_service
+  > service null type: null
+  > service null type: null
+  > service null type: null
+  > ```
 
 
 ## Bit of Internals
