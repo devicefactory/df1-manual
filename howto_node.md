@@ -463,8 +463,8 @@ The following section might interest people who want to understand how `noble` w
 Skip this section if you are only interested in the javascript API.
 
 On linux, 2 small binary facilitates BLE communcation. When `noble` is loaded, a child process will be forked
-off and the interprocess communication is carried out via system signals. These binaries will output status
-and other information on stdout, and node retrieves these values using a read pipe.
+off and the interprocess communication is carried out via system signals as well as stdin/stdout pipes.
+`l2cap-ble` binary for instance, will output data on stdout, and accept commands via stdin.
 
 All of the low-level communication is handled by two binaries:
 
