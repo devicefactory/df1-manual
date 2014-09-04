@@ -25,9 +25,9 @@ Shout out to [sandeep](https://github.com/sandeepmistry), who's done all of this
 
 * [node-device-factory1](https://github.com/sandeepmistry/node-device-factory1)
 
-  An example library that inherits from NobleDevice (`noble-device`) class.
-  It first discovers the services and characteristics, then proceeds to toggle the LED's and
-  subscribe to xyz events.
+  Library written specifically for DF1. It inherits from NobleDevice (`noble-device`) class.
+  Most of the features of DF1 is implemented as functios you can call directly. 
+  The `test.js` script included along with the package is a perfect example to start with.
 
 * [df1-browser](https://github.com/sandeepmistry/df1-browser)
 
