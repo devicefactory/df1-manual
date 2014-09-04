@@ -34,7 +34,7 @@ communicate with DF1.
   However, nothing stops you from writing your own app just by using CoreBluetooth framework.
   You just need to know which services and characteristics are available for Df1.
 
-* [Node.js and DF1](howto_ios.md)
+* [Node.js and DF1](howto_node.md)
 
   Learn how to communicate with DF1 using node.js library called
   [noble](https://github.com/sandeepmistry/noble) and other library specifically written

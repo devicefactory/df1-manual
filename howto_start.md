@@ -38,6 +38,15 @@ There are various BLE apps on the appstore that can easily discover any BLE capa
 * [TI BLE Multitool](https://itunes.apple.com/us/app/ti-ble-multitool/id580494818?mt=8)
 * [LightBlue](https://itunes.apple.com/us/app/lightblue-bluetooth-low-energy/id557428110?mt=8)
 
+
+## If You Already Know BLE
+
+Cool, if you don't need to go through the basic steps, please refer to our [iOS doc](howto_ios.md).
+You can dive straight into using our iOS library for DF1, and skip the rest of the tutorial.
+
+
+## Trying BLE for the First Time
+
 For this tutorial, let's try using 
 [LightBlue](https://itunes.apple.com/us/app/lightblue-bluetooth-low-energy/id557428110?mt=8) app.
 And no, we are not affliated with the company behind LightBlue App. It happens to be one of the better BLE

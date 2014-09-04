@@ -17,6 +17,7 @@ Shout out to [sandeep](https://github.com/sandeepmistry), who's done all of this
 * [bleno](https://github.com/sandeepmistry/bleno)
 
   We won't cover this library in the tutorial, but "BLE" + "NOde" implements BLE peripherals.
+  This library would be useful if you want to use your laptop to masquerade as a BLE device.
 
 * [noble-device](https://github.com/sandeepmistry/noble-device)
 
@@ -32,3 +33,22 @@ Shout out to [sandeep](https://github.com/sandeepmistry), who's done all of this
 
   Experimental project to run noble directly on the browser. Instead of running the scripts solely on the
   serverside, this technique can enable "full stack" development of BLE.
+
+
+## Prerequisites
+
+* If you haven't done so already, download and install [node.js](http://nodejs.org/download/).
+* If you are on Linux, download and install libbluetooth-dev
+
+  ```
+  sudo apt-get install libbluetooth-dev
+  ```
+  Optionally, you can manually install the entire [bluez](http://www.bluez.org/download/) package.
+  If you choose to install bluez from source, you might want `./configure --disable-systemd`.
+
+* Download and install [noble](https://github.com/sandeepmistry/noble)
+
+  You can follow the README.md docs for more detailed explanation of the library.
+
+
+
