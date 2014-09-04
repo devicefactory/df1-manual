@@ -128,10 +128,10 @@ sudo node test.js
   
   You'll see output like the following:
   
-  ```
-  found peripheral GTAG2:D0FF5066B767 uuid:d0ff5066b767
-  found peripheral df1 uuid:1cba8c2fcf43
-  ```
+  > ```
+  > found peripheral GTAG2:D0FF5066B767 uuid:d0ff5066b767
+  > found peripheral df1 uuid:1cba8c2fcf43
+  > ```
   
   To stop scanning,
   
