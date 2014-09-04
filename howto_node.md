@@ -26,7 +26,7 @@ Shout out to [sandeep](https://github.com/sandeepmistry), who's done all of this
 * [node-device-factory1](https://github.com/sandeepmistry/node-device-factory1)
 
   Library written specifically for DF1. It inherits from NobleDevice (`noble-device`) class.
-  Most of the features of DF1 is implemented as functios you can call directly. 
+  Most of the features of DF1 is implemented as functions you can call directly. 
   The `test.js` script included along with the package is a perfect example to start with.
 
 * [df1-browser](https://github.com/sandeepmistry/df1-browser)
