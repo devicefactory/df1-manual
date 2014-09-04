@@ -51,7 +51,7 @@ Shout out to [sandeep](https://github.com/sandeepmistry), who's done all of this
   You can follow the README.md docs for more detailed explanation of the library.
 
 
-## Test noble
+## Quick Test on noble
 
 When you do `npm install noble`, it should have created `node_modules/noble` sub-directory and installed
 the package for you. In that directory, you will see a test script called `dump.js`. Try running it:
@@ -61,7 +61,7 @@ cd node_modules/noble
 sudo node dump.js
 ```
 
-It should start scanning and try to discover all services and characteristics for devices.
+It should start scanning and try to discover all services and characteristics for any discovered BLE device.
 The output will look something like:
 
 ```{sh}
@@ -85,4 +85,49 @@ undefined
      characteristics: {} },
   '1801':
   ... 
+```
+
+
+## Internals
+
+The following section might interest people who want to understand how `noble` works under the hood.
+Skip this section if you are only interested in the javascript API.
+
+On linux, 2 small binary facilitates BLE communcation. When `noble` is loaded, a child process will be forked
+off and the interprocess communication is carried out via system signals. These binaries will output status
+and other information on stdout, and node retrieves these values using a read pipe.
+
+All of the low-level communication is handled by two binaries:
+
+* hci-ble
+
+  Implements similar functionality to `hcitool lescan`. System signal `SIGUSR1` triggers underlying
+  C function `hci_le_set_scan_enable`.
+
+* l2cap-ble
+
+
+In order to test HCI scanning, first run the binary on Linux.
+
+```
+sudo node_modules/noble/build/Release/hci-ble
+```
+
+Then from a different terminal, try sending that process `SIGUSR1`.
+
+```
+sudo kill -s SIGUSR1 `ps -ef | grep hci-ble | grep -v "grep"  | awk '{print $2}' | tail -1`
+```
+
+You'll notice that `hci-ble` binary outputs something like this on stdout.
+
+```
+$ sudo ./hci-ble
+adapterState poweredOn
+event DC:78:C8:E5:A1:F8,random,0201041aff590002150112233445566778899aabbccddeeff0000100c3bb,-59
+event 1C:BA:8C:2F:CF:43,public,020106,-65
+event 1C:BA:8C:2F:CF:43,public,040964663105125000a000020a00,-65
+event 84:DD:20:EA:F3:BC,public,020106,-82
+event D0:FF:50:66:B7:67,public,020105070203180218041802ff00,-73
+event D0:FF:50:66:B7:67,public,140947544147323a44304646353036364237363700,-72
 ```
