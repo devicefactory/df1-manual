@@ -297,11 +297,11 @@ and stores the discovered information within the device object represented by `t
 
 ## Specific to DF1!
 
-The best option is to use [node-device-factory1](https://github.com/sandeepmistry/node-device-factory1/blob/master/test.js)
+The best option is to use [node-device-factory1](https://github.com/sandeepmistry/node-device-factory1)
 library if you are using DF1 with node.js.
-Why didn't start with this library in this tutorial? That's because you can `node-device-factory1` depends on 2 underlying
-libraries which serves as the foundation. Knowing the other libraries will allow the user to interact with other BLE devices
-effectively.
+Why didn't I just start with this library in this tutorial? That's because `node-device-factory1` depends on two important underlying
+libraries which serve as the foundation. Knowing the other libraries will allow the users to go beyond just interacting with DF1 device.
+It will allow them to build things with any other BLE device on the market with published BLE specs.
 
 ```
 npm install node-device-factory1
