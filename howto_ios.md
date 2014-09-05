@@ -88,14 +88,32 @@ to get the project compiled and uploaded to your phone.
   subscription to notification handle is successful. The blue light blinks whenever the accelerometer
   is turned on and in active state.
 
-  <img src=pics/app_detail_view.png width=250>
+  <img src=pics/app_detail_view_data2.png width=250>
 
   The line chart on the top cell will start updating. The XYZ data from DF1 is reported at 5Hz.
   Thus, you are getting acceleration updates from DF1 every 200 milliseconds.  
-
-  <img src=pics/app_detail_view_data2.png width=250>
 
   You'll also notice that the second cell shows tap events. Try tapping DF1 on the top surface.
   The motion detection feature inside of DF1's accelerometer should differentiate taps from other
   movements. It will send 1 byte of event notification to the app each time tap is detected.
 
+  Lastly, the battery level is reported. The notification will be sent only when the internal
+  readings change.
+
+
+3. **Configuration View**
+
+  The current demo app is only scratching the surface of DF1's features. Each data generating
+  notification handle has other associated configuration parameters. For example, it's possible
+  to change the tap threshhold setting, so that it requires user to tap more firmly for an event
+  to be generated.
+
+  The purpose of the configuration view is to persist these settings per DF1 device. In addition
+  to accelerometer parameters, it should associate each unique device to other user preferences
+  such as custom name, alert behavior, last known gps location, etc...
+
+  <img src=pics/app_config2.png width=250>
+
+  As of this writing (2014.09.05), the config view is only partially implemented.
+  You can inspect the source code to see how things are structured, and contributors are definitely
+  welcome!
