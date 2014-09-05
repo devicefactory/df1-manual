@@ -46,12 +46,12 @@ It will timeout after couple of seconds. In order to manually initiate scanning,
 swipe your finger vertically down the screen (pulldown). You'll see the progress wheel
 appear to indicate that the scanning was initiated.
 
-<img src=pic/app_scan.png width=200>
+<img src=pics/app_scan.png width=200>
 
 If you have DF1 in detectible range, you'll see each distinct DF1's show up 
 as a box like so:
 
-<img src=pic/app_discover.png width=200>
+<img src=pics/app_discover.png width=200>
 
 When it detects DF1 device, the app will additionally connect to the device and carry
 out the following operations:
@@ -60,7 +60,7 @@ out the following operations:
 * discover subset of service characteristics
 * provide Red LED toggle button upon initialization
 
-<img src=pic/app_discover_initialized.png width=200>
+<img src=pics/app_discover_initialized.png width=200>
 
 Upon successful initialization (may take few seconds for each DF1), a small button
 with label "led" will appear. Use this button to light up the red LED, and identify
