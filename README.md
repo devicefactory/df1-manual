@@ -32,7 +32,7 @@ communicate with DF1.
 
   Learn how to use AND contribute to DF1's iOS library. Here, we highlight parts of the library.
   However, nothing stops you from writing your own app just by using CoreBluetooth framework.
-  You just need to know which services and characteristics are available for Df1.
+  You just need to know which services and characteristics are available for DF1.
 
 * [Node.js and DF1](howto_node.md)
 
