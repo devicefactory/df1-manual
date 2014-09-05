@@ -29,7 +29,7 @@ to get the project compiled and uploaded to your phone.
 
 ## DF1 Demo App
 
-1. **Starting the App**
+* **Starting the App**
 
   Currently, the demo app can:
   
@@ -73,7 +73,7 @@ to get the project compiled and uploaded to your phone.
   see the RSSI value and the bar indicator change accordingly.
 
 
-2. **Detailed View**
+* **Detailed View**
 
   Now that we can scan and discover our DF1, let's try to get some data off of it.
   Simply press anywhere in the box showing your DF1 to go into the detailed view.
@@ -101,7 +101,7 @@ to get the project compiled and uploaded to your phone.
   readings change.
 
 
-3. **Configuration View**
+* **Configuration View**
 
   The current demo app is only scratching the surface of DF1's features. Each data generating
   notification handle has other associated configuration parameters. For example, it's possible
