@@ -241,8 +241,8 @@ This will pull directly from github and install.
 npm install sandeepmistry/noble-device
 ```
 
-Here, I printed the entire `test.js` in its entirety.
-Notice that it's much more simplified than before.
+Here, I printed the `test.js` script in its entirety.
+Notice that interacting with the BLE device is much more simplified than before.
 
 ```{javascript}
 var async = require('async');
