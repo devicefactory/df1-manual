@@ -112,6 +112,10 @@ to get the project compiled and uploaded to your phone.
   to accelerometer parameters, it should associate each unique device to other user preferences
   such as custom name, alert behavior, last known gps location, etc...
 
+  You can currently change the name of the device. This way, you can associate the device's unique
+  UUID to a name you can recognize on your app. It's recommended that you change the name of your
+  device right away, so you don't confuse it with other DF1's in the vicinity.
+
   <img src=pics/app_config2.png width=250>
 
   As of this writing (2014.09.05), the config view is only partially implemented.
