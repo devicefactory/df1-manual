@@ -83,4 +83,19 @@ to get the project compiled and uploaded to your phone.
 
   <img src=pics/app_detail_view.png width=250>
 
-  
+  Keep an eye on your DF1. You'll notice that the green light will blink once and then
+  blue light will start flashing every 5 seconds or so. The green light is to indicate that
+  subscription to notification handle is successful. The blue light blinks whenever the accelerometer
+  is turned on and in active state.
+
+  <img src=pics/app_detail_view.png width=250>
+
+  The line chart on the top cell will start updating. The XYZ data from DF1 is reported at 5Hz.
+  Thus, you are getting acceleration updates from DF1 every 200 milliseconds.  
+
+  <img src=pics/app_detail_view_data2.png width=250>
+
+  You'll also notice that the second cell shows tap events. Try tapping DF1 on the top surface.
+  The motion detection feature inside of DF1's accelerometer should differentiate taps from other
+  movements. It will send 1 byte of event notification to the app each time tap is detected.
+
