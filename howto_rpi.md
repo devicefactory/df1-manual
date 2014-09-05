@@ -7,6 +7,8 @@ You've come to the right place (or tutorial)!
 
 Here, you'll learn how to communicate with DF1 using Raspberry Pi.
 But before we begin, we need to make sure Raspberry Pi is equipped with all the necessary parts.
+The tools and techniques presented here is not specific to Raspberry Pi. In fact, all of this
+work on linux machines as well.
 
 ## Prerequisites
 
