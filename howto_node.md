@@ -5,6 +5,8 @@
 There's an excellent library called [noble](https://github.com/sandeepmistry/noble) that gives javascript access to 
 the BLE world. The library implements asynchronous callback interface to low-level BLE communication, acting as a "bridge"
 between node.js and specifics of BLE protocol. The library is supported on both Linux and MacOS.
+This tutorial assumes you are doing the exercises in linux, as such, you'll see that commands are often 
+prefaced with `sudo`. On MacOS, however, running the command under `sudo` will be unnecessary.
 
 You can find more details about the library in other related github repos. 
 Shout out to [sandeep](https://github.com/sandeepmistry), who's done all of this great work on node.js + BLE.
@@ -233,9 +235,10 @@ routines.
 ## Enter noble-device Library
 
 First install [noble-device](https://github.com/sandeepmistry/noble-device).
+This will pull directly from github and install.
 
 ```
-npm install noble-device
+npm install sandeepmistry/noble-device
 ```
 
 Here, I printed the entire `test.js` in its entirety.
@@ -244,7 +247,7 @@ Notice that it's much more simplified than before.
 ```{javascript}
 var async = require('async');
 
-var NobleDevice = require('./index');
+var NobleDevice = require('noble-device');
 
 var TestDevice = function(peripheral) {
   NobleDevice.call(this, peripheral);
@@ -304,13 +307,13 @@ libraries which serve as the foundation. Knowing the other libraries will allow 
 It will allow them to build things with any other BLE device on the market with published BLE specs.
 
 ```
-npm install node-device-factory1
+npm install sandeepmistry/node-device-factory1
 ```
 
 Run the `test.js`.
 
 ```
-sudo node test.js
+sudo node node_modules/device-factory1/test.js
 ```
 
 Again, the code is printed here in its entirety.
@@ -327,7 +330,7 @@ The following script will connect to DF1 and carry out the following actions:
 ```{javascript}
 var async = require('async');
 
-var DeviceFactory1 = require('./index');
+var DeviceFactory1 = require('device-factory1');
 
 DeviceFactory1.discover(function(df1) {
   console.log('found ' + df1.uuid);

@@ -23,7 +23,7 @@ git clone git@github.com:devicefactory/df1-ios.git
 You will need Apple Developer license to install the app on your phone.
 The iPhones 4S and above has bluetooth low energy equipped. The older iPhones will not work.
 
-Follow the [instruction on README](https://github.com/devicefactory/df1-ios)
+Follow the [instruction on README](https://github.com/devicefactory/df1-ios/blob/master/README.md)
 to get the project compiled and uploaded to your phone.
 
 
