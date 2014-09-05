@@ -76,3 +76,11 @@ to get the project compiled and uploaded to your phone.
 2. **Detailed View**
 
   Now that we can scan and discover our DF1, let's try to get some data off of it.
+  Simply press anywhere in the box showing your DF1 to go into the detailed view.
+
+  It will take couple of seconds to discover remaining services and characteristics for
+  the device. A progress HUD will show until this is done.
+
+  <img src=pics/app_detail_view.png width=250>
+
+  
