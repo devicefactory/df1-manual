@@ -60,7 +60,7 @@ out the following operations:
 * discover subset of service characteristics
 * provide Red LED toggle button upon initialization
 
-<img src=pics/app_discover_initialized.png width=200>
+<img src=pics/app_scan_initialized.png width=200>
 
 Upon successful initialization (may take few seconds for each DF1), a small button
 with label "led" will appear. Use this button to light up the red LED, and identify
