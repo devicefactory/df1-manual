@@ -126,7 +126,7 @@ Here are simple exercises you can do in order to get familiar with the library.
   We are just going to print the name of the device and its uuid.
   
   ```{javascript}
-  // fire of BLE scanning!
+  // fire off BLE scanning!
   noble.startScanning()
   ```
   
