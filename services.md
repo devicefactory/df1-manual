@@ -109,6 +109,7 @@ Here are the supported accelerometer config UUIDs and their purpose.
 | ACC_TRAN_THS_UUID     | 0xAA22  | r/w  | 16=1g   | Increment of 0.063g. Shakes exceeding this threshhold triggers Transient event.        |
 | ACC_TRAN_DEB_UUID     | 0xAA23  | r/w  | 1=10ms  | Increment of 10msec. Noise-reduce by not allowing event if subsequent jolt detected.   |
 | ACC_TRAN_HPF_UUID     | 0xAA24  | r/w  | 8=0.5Hz | Highpass filter removes constant gravity reading. Filter cutoff listed below.          |
+| ACC_XYZ_FREQ_UUID     | 0xAA26  | r/w  | 5=5Hz   | Controls BLE notification frequency. Accepts ranges 1-50Hz, thus 1000-20msec periods.  |
 
 * `ACC_TRAN_HPF_UUID` allowed values are:
 
