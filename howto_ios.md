@@ -24,8 +24,7 @@ You will need Apple Developer license to install the app on your phone.
 The iPhones 4S and above has bluetooth low energy equipped. The older iPhones will not work.
 
 Follow the [instruction on README](https://github.com/devicefactory/df1-ios/blob/master/README.md)
-to get the project compiled and uploaded to your phone.
-
+to get the project compiled and uploaded to your phone.  
 
 ## DF1 Demo App
 
@@ -36,9 +35,13 @@ to get the project compiled and uploaded to your phone.
   * scan and discover DF1 devices
   * subscribe to battery level notifications
   * subscribe to 8 bit XYZ data
+  * subscribe to 14 bit XYZ data
   * subscribe to tap event data
   * toggle LED
   * associate user assigned name to a device
+  * change among 2, 4, 8G acceleration range
+  * dynamically adjust the BLE notification frequency
+  * update the firmware!
   
   The TODO list for this demo app is perhaps more numerous than the existing features.
   They will be listed at the end of this tutorial.
@@ -50,7 +53,7 @@ to get the project compiled and uploaded to your phone.
   
   <img src=pics/app_scan.png width=250>
   
-  If you have DF1 in detectible range, you'll see each distinct DF1's show up 
+  If you have DF1 within detectible range, you'll see each distinct DF1's show up 
   as a box like so:
   
   <img src=pics/app_discover.png width=250>
@@ -121,3 +124,12 @@ to get the project compiled and uploaded to your phone.
   As of this writing (2014.09.05), the config view is only partially implemented.
   You can inspect the source code to see how things are structured, and contributors are definitely
   welcome!
+
+  *UPDATE (2015.03.08)*
+  
+  You can now do firmware update using the app!
+  In the config view, you just have to initiate Over-Air-Update feature by pressing "OAD trigger" button.
+
+  Refer to this doc in more detail:
+
+  [firmware update](https://github.com/devicefactory/df1-manual/blob/master/howto_fwupdate.md)
