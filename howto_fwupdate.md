@@ -4,8 +4,8 @@ Updating the firmware is as easy as installing the DF1 iOS app.
 Currently, only iOS devices are supported. Android is not supported yet.
 
 In order to update the firmware, load the App.
-While the DF1 app is being posted on the Apple Appstore, you can download
-the open source code and load it into your own device.
+We are in the process of posting the DF1 App on the Apple Appstore.
+In the meantime, you can download the open source code and load it into your own device.
 
   https://github.com/devicefactory/df1-ios
 
